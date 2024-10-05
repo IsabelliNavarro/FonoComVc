@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&family=Salsa&display=swap');
+
+:root {
+    --cor-lar: #FF6600;
+    --cor-vdm: #067D80;
+    --cor-vde: #033233;
+    --cor-vdc: #25E4BC;
+    --fonte-primaria: "Roboto", sans-serif;
+    --fonte-secundaria: "Poppins",sans-serif;
+    --fonte-banner: "Salsa", cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-secundaria);
+}
+
+
+body{
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    overflow:-moz-hidden-unscrollable;
+
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 1% 5% 1% 5%;
+    background-color: white;   
+    box-shadow: 10px 15px 15px black;
+}
+
+.cabecalho__logo{
+    width: 10%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 3rem;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 500;
+    color:var(--cor-vdm);
+    text-decoration: none;
+}
+
+p{
+    padding: 0.5rem 0rem;
+    color: var(--cor-vde);
+}
+
+.titulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:var(--cor-lar);
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+    
+}
+.subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:var(--cor-vdm);
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+
+}
+.banner{
+    padding: 10% 5% ;
+    background-image: url("../assets/mulher-fone-laranja.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: left top;  
+    background-color: var(--cor-lar);
+    height: 15rem;
+}
+.banner__texto{
+    font-family: var(--fonte-banner);
+    font-size: 3.75rem;
+    text-align: right;
+    color: var(--cor-vdc);
+    text-shadow: black 0.2rem 0.2rem 0.2rem;
+}
+.banner__texto__sub{
+    font-family: var(--fonte-secundaria);
+    font-size: 3rem;
+    text-align: right;
+    color: var(--cor-vdc);
+    font-weight: 300;
+    text-shadow: black 0.2rem 0.2rem 0.2rem;
+    
+}
+.banner__box{
+    display: flex;
+    color: white;
+    font-family: var(--fonte-primaria);
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 2rem 0rem 2rem 2rem;
+    justify-content: flex-end;   
+}
+.banner__box__ctto{
+    background-color: var(--cor-vde);
+    padding: 0.5rem;
+    width: 12rem;
+}
+
+.banner__box__end{
+    display: flex;
+    background-color: #067D80;
+    padding: 0.5rem;
+    width: 12rem;
+}
+.banner__box__end__texto{
+    display:flex;
+    flex-direction: column;
+    gap: 0.4rem; 
+}
+.white{
+    color: white;
+    padding: 0;
+}
+
+.servicos {
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+
+}
+.servicos__box {
+    width: 30%;
+    text-align: center;
+    border-left: 0.5rem solid var(--cor-lar);
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 1rem 1rem 1rem gray;
+
+}
+.texto {
+    font-family: var(--fonte-secundaria);
+    font: size 1.25rem;
+    font-weight: 500;
+    color:var(--cor-vde);
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.servicos__box__icon {
+    width: 4rem;
+    align-content: center;
+    padding: 0.5rem;
+}
+.porque {
+    padding: 5%;
+}
+
+.material-symbols-outlined{ 
+    
+    animation: pulse 3s infinite;
+    animation-direction: alternate-reverse;
+    padding: 0.25rem 0.5rem 0rem 0rem;
+    vertical-align:middle;
+}
+
+@keyframes pulse {
+    0%  { color: white;}
+    50% { color: var(--cor-vdc);}
+  100%  { color: var(--cor-vdm)  }
+}
+
+span.star{ 
+    
+    animation: pulse_star 3s infinite;
+    animation-direction: alternate-reverse;
+    padding: 0.25rem 0.5rem 0.25rem 0rem;
+    vertical-align:middle;
+}
+
+@keyframes pulse_star {
+    0%  { color: yellow;}
+  100%  { color: var(--cor-lar)  }
+}
+
+.avaliacoes{
+    padding: 5%;
+}
+.avaliacoes__comentarios{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.avaliacoes__comentarios__box {
+    width: 28%;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-family: var(--fonte-secundaria);
+    border-left: 0.5rem solid var(--cor-lar);
+    font-size: 1rem;
+    padding: 0.5rem;
+    box-shadow: 1rem 1rem 1rem gray;
+    
+}
+.cv{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+    color: #033233;
+}
+.foto{
+    width: 30%;
+    border: 5px var(--cor-lar);
+}
+.rodape{
+    background-color: var(--cor-vde);
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rodape__texto{
+    color: white;
+    font-family: var(--fonte-primaria);
+    font: size 1.25rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+.rodape__titulo{
+    font-family: var(--fonte-banner);
+    font-size: 3rem;
+    color: var(--cor-lar);
+}
+.whats{
+    position: fixed;
+    width: 5rem;
+    bottom: 2rem;
+    right: 0em;
+}
+.exames{
+    background-image:url(../assets/phones.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: left top;  
+    background-color:whitesmoke;
+    padding: 5%;
+}
+.exames__texto{
+    width: 60%;
+    padding: 0% 0% 15% 0%;
+
+}
+
+
+@media(max-width: 900px) {
+    .cabecalho__logo{
+        width: 25%;
+    }
+    .cabecalho__menu{
+        gap: 1rem
+    }
+    .titulo{
+        font-size: 2rem;
+    }
+    .banner{
+        background-position: 2% 99.5%;
+        height: auto;
+        font-size: auto;
+        background-size: 70%;
+    }
+    .banner__texto{
+        font-size: 3rem;
+    }
+    .banner__texto__sub{
+        font-size: 2rem;
+    }
+
+
+    .banner__box{
+        flex-direction: column;
+        align-items: end;
+    }
+    .cv{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape{
+        flex-direction: column;
+    }
+    .avaliacoes__comentarios__box{
+        width: auto;
+    }
+    .servicos__box{
+        width: auto;
+    }
+    .exames{
+        background-size: 90%;
+        background-position: left top;  
+        background-color:whitesmoke;
+        padding: 5%;
+    }
+    .exames__texto{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 4rem;
+
+    }
+}
